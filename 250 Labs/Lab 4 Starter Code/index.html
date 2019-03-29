@@ -1,0 +1,85 @@
+<!DOCTYPE html> 	<!-- Tells the browser this is HTML 5 -->
+<html lang="en"> 	<!-- Root of the html document and is in English -->
+
+<head>
+
+	<!-- META tags help search engines identify your content more easily -->
+	<meta charset="utf-8" /> <!-- Specifies the character encoding for the HTML document -->
+	<meta name="author" content="Jeria Quesenberry">
+	<meta name="keywords" content="Carnegie Mellon University, Information Systems, resume">
+	<meta name="description" content="Jane Doe Professional Website">
+
+	<!-- The title will appear in the menu bar of the browser -->
+	<title>Jane Doe</title>
+	
+    <link rel="stylesheet" media="all" type="text/css" href="css/styles.css" />
+	
+</head>
+
+<body>
+	
+<div id="container">
+	
+	<div id="top_row">
+	
+	<header> <!-- Header is new tag in HTML 5 -->
+		<h1>Jane Doe</h1>
+		<h3>Carngeie Mellon University, Information Systems Program</h3>
+	</header>
+	
+	<nav> <!-- Nav is new tag in HTML 5 -->
+	    <a class="selected" href="index.html">About</a> <!-- Navigation to other pages in our website - these are relative links --> 
+	    <a href="projects.html">Projects</a> 
+	    <a href="contact.html">Contact</a>
+	    <!-- This anchor takes us to another page within the site; hence it is called a relative link. -->	
+	</nav>
+
+	</div>
+	
+	<div id="content"> <!-- Use div tag with an attribute of an id = content (i.e., this div's unique name) -->
+		<h3>About</h3>
+	    
+		<img src="images/photo.png" alt="Photo"  />
+		
+		<div id="bio">
+		
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi consequat lacus vel rutrum blandit. Suspendisse ullamcorper commodo ipsum, vel bibendum nisi condimentum non. Morbi fringilla risus elementum, condimentum velit a, vulputate dolor. Vivamus a ipsum magna. Suspendisse et interdum dolor, at commodo libero. Vestibulum pellentesque tortor convallis libero cursus faucibus. Proin id sapien sollicitudin purus convallis dictum egestas rhoncus arcu. Mauris venenatis sagittis urna, aliquam laoreet nibh sodales a.</p>
+
+			<h4>Courses Taken</h4>
+			<ul>
+				<li>67-250: Information Systems Milieux</li>
+				<li>67-329: Contemporary Themes in Global Systems</li>
+				<li>67-373: Information Systems Consulting Project</li>
+				<li>67-475: Innovations in Information Systems</li>
+			</ul>
+		
+			<a href="resume.pdf" target="_blank"><strong>Resume</strong></a>
+		</div>
+				
+	</div> <!-- Close content -->
+	
+	<div id="sidebar">
+		<h3>Contact</h3>
+		<strong>Jane Doe</strong><br/>
+		<a href="http://www.cmu.edu" target="_blank">Carnegie Mellon University</a><br/>
+		5000 Forbes Avenue<br/>
+		Pittsburgh, PA 15213<br/>
+		412-268-0000 (h)<br/>
+		412-555-5555 (c)<br/><br/>
+		<a href="mailto:jquesenberry@cmu.edu"><img src="images/email.png"></a>
+		<a href="http://www.linkedin.com" target="_blank"><img src="images/linkedin.png"></a>
+		<a href="http://www.facebook.com" target="_blank"><img src="images/facebook.png"></a>
+	</div> <!--Close sidebar  -->
+
+	<footer>
+		&copy; Jane Doe<br/>
+		<a href="mailto:janedoe@cmu.edu">Email Me</a>
+		<!-- Anchor tags can take you to pages outside the site, within the site or within the page. -->
+	    <a href="http://cmu.edu" target="_blank">Carnegie Mellon University</a>
+	    <!-- This anchor takes us to another site (href starts with "http://...") so this is an absolute link. -->
+	</footer>
+
+</div>	
+</body>
+
+</html>

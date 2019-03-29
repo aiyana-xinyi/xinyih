@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<meta charset="utf-8" />
+	<meta name="author" content="Aiyana Huang">
+	<meta name="keywords" content="Carnegie Mellon University, Information Systems">
+	<meta name="description" content="Professional Website">
+
+	<link rel = "stylesheet" media="all" type="text/css" href="css/styles.css"/>
+	<link rel = "stylesheet" media="all" type="text/css" href="css/jquery-ui.css"/>	
+	<link rel = "stylesheet" media="all" type="text/css" href="css/jquery.lightbox.css"/>
+
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="js/scripts.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.js"></script>
+	<script type="text/javascript" src="js/jquery.lightbox.min.js"></script>
+	<script>
+		$(function() {
+			$( "#accordion" ).accordion();
+		});
+	</script>
+	<script>
+		$(function(){
+			$( "#tabs" ).tabs({
+				event: "mouseover"
+			});
+			
+		});
+	</script>
+	<script type="text/javaScript">
+		$(function(){
+			$('#gallery a').lightBox();
+		});
+	</script>
+
+</head>
+
+<body>
+
+	<div id = "container">
+
+		<div id = "top_row">
+			<header>
+				<h1>Aiyana Huang</h1>
+				<h3>Carnegie Mellon University, Information Systems</h3>
+
+			</header>
+
+			<nav> 
+				<a href="index.html" >About</a>
+				<a href="projects.html" class = "selected">Projects</a>
+				<a href="contact.html">Contact</a>
+			</nav>
+		</div>
+
+		<div id="content">
+			<h3>Projects</h3>
+		
+		<div id="accordion">
+			<h4> Case Analysis Project</h4>
+			<div><p>
+				This is a project on Alibaba where I examined their business strategies and propose better solutions.
+			</p></div>
+			<h4>Web Development Project</h4>
+			<div><p>
+				This is a project where I develop a website for a real-life company based on their needs.
+			</p></div>
+			<h4>Database Project</h4>
+			<div><p>
+				This is where I designed a database.
+			</p>
+			<ul>
+				<li>item 1</li>
+				<li>item 2</li>
+				<li>item 3</li>
+			</ul>
+			</div>
+		</div>
+
+		<div id="tabs">
+			<ul>
+				<li><a href="#tabs-1">Case Analysis Project</a></li>
+				<li><a href="#tabs-2">Wed Dev Project</a></li>
+				<li><a href="#tabs-3">Database Project</a></li>
+			</ul>
+
+			<div id="tabs-1">
+				<p> Alibaba yay</p>
+			</div>
+			<div id="tabs-2">
+				<p>Make my own web</p>
+			</div>
+			<div id="tabs-3">
+				<p>Database stuff</p>
+			</div>
+		</div>
+
+		<p> Click on timage to see full image</p>
+		<div id = "gallery">
+			<div id="galleryThumbnail"><div id="thmbnlShadow">
+			<a href="images/cake1.png" title="The case analysis project evaluated a variety of enterprise layer concepts at Alibaba">
+			<img src="images/cake1.png" alt="image 1"/></a></div></div>
+
+			<div id="galleryThumbnail"><div id="thmbnlShadow">
+			<a href="images/cake2.png" title="The web development project utilize front-end web development techniques using HTML, CSS, and JavaScript.">
+			<img src="images/cake2.png" alt="image 2"></a></div></div>
+
+			<div id="galleryThumbnail"><div id="thmbnlShadow">
+			<a href="images/cake3.png" title="The database project included an entity relationship diagram and several data creation and manipulation techniques in MySQL.">
+			<img src="images/cake3.png" alt="image 3"></a></div></div>
+		</div>
+
+		<table border="4">
+		  <tr>
+		  	<th colspan="3">Course Projects</th>
+		  </tr>
+		  <tr>
+		    <th>Title</th>
+		    <th>Course</th> 
+		    <th>Semester</th>
+		  </tr>
+		  <tr onmouseover="showDescription('In the case analysis project, we analyzed AlibBaba and described how we could improve their pricess');" onmouseout="hideDescription();">
+		    <td>Case Analysis Project</td>
+		    <td>67-250</td>
+		    <td>Spring 2019</td>
+		  </tr>
+		  <tr onmouseover="showDescription('In the web development project, we applied our web dev lab skills to a real world scenerio');" onmouseout="hideDescription();">
+		    <td>Web Development Project</td>
+		    <td>67-250</td>
+		    <td>Spring 2019</td>
+		  </tr>
+		  <tr onmouseover="showDescription('In the database project, we learned how to model the of a company in realtional form');" onmouseout="hideDescription();">
+		    <td>Database Project</td>
+		    <td>67-250</td>
+		    <td>Spring 2019</td>
+		  </tr>
+		  <tr onmouseover="showDescription('In the Piano Tiles project, I made a game with Python and Aubio that mimics the piano tiles game');" onmouseout="hideDescription();">
+		  	<td>Falling Piano Tiles</td>
+		  	<td>15-112</td>
+		  	<td>Fall 2018</td>
+		  </tr>
+		</table>
+		<div id="description"></div>
+
+		</div>
+		<div id = "sidebar">
+			<h3>Contact</h3>
+			<strong>Aiyana Huang</strong><br>
+			<div id = "carnegieLink">
+				<a href ="http://www.cmu.edu" target = "_blank">Carnegie Mellon University</a><br>
+			</div>
+			5000 Forbes Avenue</br>
+			Pittsburgh, PA 15213</br>
+			425-344-3278</br>
+			<a href="mailto:xinyih@andrew.cmu.edu"><img src="images/email.png"></a>
+			<a href="https://www.linkedin.com/in/xinyi-huang-644549177/"><img src ="images/linkedIn.png"></a>
+			<a href="https://www.facebook.com/aiyana.huang.5"><img src="images/facebook.png"></a>
+		</div>
+
+		<footer>
+
+		&copy; Aiyana Huang<br/>
+		<div id="otherLink">
+			<a href = "mailto:xinyih@andrew.cmu.edu">Email Me</a>
+			<a href = "http://cmu.edu" target = "_blank">Carnegie Mellon University</a><br>
+		</div>
+		</footer>
+	</div>
+	 	
+
+</body>
+
+</html> 

@@ -1,0 +1,111 @@
+<!DOCTYPE html> 	<!-- Tells the browser this is HTML 5 -->
+<html lang="en"> 	<!-- Root of the html document and is in English -->
+
+<head>
+
+	<!-- META tags help search engines identify your content more easily -->
+	<meta charset="utf-8" /> <!-- Specifies the character encoding for the HTML document -->
+	<meta name="author" content="Jeria Quesenberry">
+	<meta name="keywords" content="Carnegie Mellon University, Information Systems, resume">
+	<meta name="description" content="Jane Doe Professional Website">
+
+	<!-- The title will appear in the menu bar of the browser -->
+	<title>Jane Doe</title>
+	
+	<link rel="stylesheet" media="all" type="text/css" href="css/styles.css" />
+		
+</head>
+
+<body>
+
+<div id="container">
+	
+	<div id="top_row">
+	
+	<header>
+		<h1>Jane Doe</h1>
+		<h3>Carngeie Mellon University, Information Systems Program</h3>
+	</header>
+	
+	<nav> 
+	    <a href="index.html">About</a> 
+	    <a href="projects.html">Projects</a> 
+	    <a class="selected" href="contact.html">Contact</a>
+	</nav>
+
+	</div>
+
+	<div id="content">
+
+	<h3>Contact</h3>
+	  <p>Please use the below form to get in touch with me.</p>
+	  
+	  <form>
+	  
+	  <fieldset>
+		  <legend>Tell me more about yourself</legend>
+		  <label for="uname">Name:</label> <br/>
+		  <input type="text" id="uname" name="uname" value="Your Name" size="20" maxlength ="250"><br/><br/>
+		  <label for="txtDate">Your date of birth:</label> <br>
+		  <input type="date" id="txtDate" name="txtDate" value="" size="20" maxlength ="250"><br/><br/>
+	  </fieldset>
+	  
+	  <fieldset>
+		  <legend>Tell me about your preferences</legend>
+		  <label for="flower">Your favorite flower color:</label> <br/>
+		  <input type="color" id="flower" name="flower" value="Your favorite flower color" ><br/><br/>
+		  <label fr="message">Message:</label> <br/>
+		  <textarea id="message" name="message" value="Type your Message" rows="10" cols="50" maxlength="1000"> </textarea><br/><br/>
+	  </fieldset>
+	  
+	  <fieldset>
+		  <legend>Let's stay in touch</legend>
+		  <label for="source">How did you find out about me?</label>
+		  <select name="source">
+			  <option value="Google" selected>Google</option>
+			  <option value="news">News article</option>
+			  <option value="friend">Friend</option>
+			  <option value="other">Other</option><br/>
+		  </select><br/><br/>
+
+		  <label>Please indicate if you want to receive updates via email:</label><br/>
+		  <input type="checkbox" id="signup" name="signup" value="yes">Yes, please update me!<br/><br/>
+		  <label for="email">Please provide your email address:</label><br/>
+		  <input type="email" id="email" name="email" value="" Placeholder = "abc@defg.com" required ><br/><br/>
+		  <label for="pswrd">Choose a password:</label><br/>
+		  <input type="password" id="pswrd" name="pswrd" value="" size="20" maxlength="20"><br/>
+	  </fieldset>
+	  
+	  <fieldset>
+	  	  <input type ="image" src="images/submit.png" alt="Submit" name= "btnimage" value ="Submit">
+	  </fieldset>
+	  
+	  </form>
+	  	
+	</div> <!-- Close content -->
+	
+	<div id="sidebar">
+		<h3>Find Me</h3>
+		<strong>Jane Doe</strong><br/>
+		<a href="http://www.cmu.edu" target="_blank">Carnegie Mellon University</a><br/>
+		5000 Forbes Avenue<br/>
+		Pittsburgh, PA 15213<br/>
+		412-268-0000 (h)<br/>
+		412-555-5555 (c)<br/><br/>
+		<a href="mailto:jquesenberry@cmu.edu"><img src="images/email.png"></a>
+		<a href="http://www.linkedin.com" target="_blank"><img src="images/linkedin.png"></a>
+		<a href="http://www.facebook.com" target="_blank"><img src="images/facebook.png"></a>
+	</div> <!--Close sidebar  -->
+	
+	<footer>
+		&copy; Jane Doe<br/>
+		<a href="mailto:janedoe@cmu.edu">Email Me</a>
+		<!-- Anchor tags can take you to pages outside the site, within the site or within the page. -->
+	    <a href="http://cmu.edu" target="_blank">Carnegie Mellon University</a>
+	    <!-- This anchor takes us to another site (href starts with "http://...") so this is an absolute link. -->
+	</footer>
+
+</div> <!-- Close container -->	
+</body>
+
+</html>

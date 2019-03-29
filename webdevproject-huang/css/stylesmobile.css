@@ -1,0 +1,103 @@
+@media screen and (max-width: 600px) {
+   
+    body {
+		font-size: 100%; 
+		background-color: #faf7f3; 
+    }
+	
+	#container {
+		width: 100%; 
+		margin: 1em auto; 
+		background-color: #faf7f3;
+	}
+
+
+
+	#top_row h1 {
+		color: #2a1d1c;
+		font-size: 2em;
+	}
+
+	#top_row h3 {
+		font-size: 1em; 
+	}
+	
+	#top_row nav {
+		display:none;	
+	}
+	
+	#content {
+		float: center;
+		text-align: center;
+		width: 100%; 
+		margin: 0;
+		padding: 1em; 
+		border-right: none;
+	}
+
+	#content h3 {
+		float: center;
+		text-align: center;
+		font-size: 1.25em; 
+		margin: 0; 
+	}
+
+	#content img {
+		float: center;
+		text-align: center;
+		display: none; 
+	}
+
+	#paragraph img{
+		display:none;
+	}
+	#paragraph {
+		background-color: #faf7f3;
+	}
+	#paragraph p{
+		font-size: 15px;
+	}
+	#top_row{
+		background-color: #faf7f3;
+	}
+
+
+	#bio {
+		margin-left: 0em; 
+		font-size: .875em; 
+	}
+
+	#bio a {
+		border-bottom: none; 
+	}
+
+	#sidebar {
+		float: left; 
+		padding: 0em; 
+		font-size: .875em; 
+		border: none; 
+	}
+
+	#sidebar h3 {
+		font-size: 1.25em; 
+		margin: 0; 
+		border: none; 
+	}
+
+	
+
+	footer {
+	clear: both; 
+	padding: .5em;
+	color: #333333;
+	font-variant: small-caps; 
+	font-size: .813em;
+	text-align: center;
+	border-top: 1px dotted #cccccc;
+	background-color: #faf7f3;
+}
+
+
+	} 
+	}
+}

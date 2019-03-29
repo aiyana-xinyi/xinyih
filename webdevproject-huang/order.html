@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<link rel = "stylesheet" media="all" type="text/css" href="css/styles.css"/>
+	<meta charset="utf-8" />
+	<meta name="author" content="Aiyana Huang">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script type="text/javascript" src="js/scripts.js"></script>
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Antic Didone' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Alex Brush' rel='stylesheet'>
+    <script>
+        $(function(){
+            $( "#menuTab" ).tabs({
+                event: "mouseover"
+            });
+            
+        });
+    </script>
+
+</head>
+
+<body>
+	<div id="container">
+		<div id = "top_row">
+			<nav> 
+				<a href="about.html" >About</a>
+				<a href="menu.html">Menu</a>
+				<a href="order.html" class = "selected">Order</a>
+                <a href="index.html"><img src="images/logo1.png"></a>
+				<a href="contact.html">Contact Us</a>
+                <a href="location.html" >Location/Hours</a>
+                <a href="admin.html" >Admin</a>
+			</nav>
+		</div>
+
+        <div class="tab">
+              <button class="tablinks" onclick="menuTab(event, 'Others')" id = "defaultOpen">Others</button>
+              <button class="tablinks" onclick="menuTab(event, 'Pies')">Pies</button>
+        </div>
+        <div id="Others" class="tabcontent">
+              <h3>Others</h3>
+              <p>Order your own desserts!</p>
+              <div id ="orderForm">
+                 <form>
+                <fieldset>
+                    <legend>Cake Size</legend>
+                    <h3>Choose a Size:</h3>
+                    <input type="radio" name="size" value="6" checked> 6" ($35+)<br>
+                    <input type="radio" name="size" value="8"> 8" ($45+)<br>
+                    <input type="radio" name="size" value="9"> 9" ($55+)
+                </fieldset>
+                <fieldset>
+                    <legend>Cake Base</legend>
+                    <h3>Choose a Base:</h3>
+                    <input type="radio" name="base" value="oliveoil" checked>Olive Oil<br>
+                    <input type="radio" name="base" value="vegan">Vegan<br>
+                </fieldset>
+                <fieldset>
+                    <legend>Cake Flavor</legend>
+                    <h3>Choose a Flavor:</h3>
+                    <select>
+                            <option value="Chocolate">Chocolate</option>
+                            <option value="Chocolate Sweet Potato">Chocolate Sweet Potato</option>
+                            <option value="Chocolate Beet">Chocolate Beet</option>
+                            <option value="Chocolate Cinnamon">Chocolate Cinnamon</option>
+                            <option value="Espresso">Espresso</option>
+                            <option value="Vanilla Olive Oil">Vanilla Olive Oil</option>
+                            <option value="Lavender">Lavender</option>
+                            <option value="Lemon">Lemon</option>
+                            <option value="Rose">Rose</option>
+                            <option value="Poppy Seed">Poppy Seed</option>
+                            <option value="Black Sesame">Black Sesame</option>
+                            <option value="Clementine">Clementine</option>
+                            <option value="Blood Orange">Blood Orange</option>
+                            <option value="Pumpkin">Pumpkin</option>
+                            <option value="Pear Spice">Pear Spice</option>
+                            <option value="Apple Spice">Apple Spice</option>
+                            <option value="Banana Spice">Banana Spice</option>
+                            <option value="Sweet Potato Spice">Sweet Potato Spice</option>
+                            <option value="Cinnamon">Cinnamon</option>
+                            <option value="Butternut Squash">Butternut Squash</option>
+                            <option value="Matcha Green Tea">Matcha Green Tea</option>
+                            <option value="Coconut">Coconut</option>
+                            <option value="Carrot Spice">Carrot Spice</option>
+                            <option value="Turmeric">Turmeric</option>
+                            <option value="Pecan">Pecan</option>
+                            <option value="Almond">Almond</option>
+                            <option value="Rosemary">Rosemary</option>
+                            <option value="Fig (seasonal)">Fig (seasonal)</option>
+                            <option value="Peanut Butter">Peanut Butter</option>
+                            <option value="Berry">Berry</option>
+                            <option value="Berry Basil">Berry Basil</option>
+                            <option value="Elderflower">Elderflower</option>
+                            <option value="Creme De Violette">Creme De Violette</option>
+                    </select>
+                </fieldset>
+                <fieldset>
+                    <legend>Buttercream</legend>
+                    <h3>Choose a Buttercream:</h3>
+                    <select>
+                            <option value="Vanilla">Vanilla</option>
+                            <option value="Vanilla Mascarpone">Vanilla Mascarpone</option>
+                            <option value="Chocolate">Chocolate</option>
+                            <option value="Chocolate Cinnamon">Chocolate Cinnamon</option>
+                            <option value="Mocha">Mocha</option>
+                            <option value="Espresso">Espresso</option>
+                            <option value="Cinnamon Mocha">Cinnamon Mocha</option>
+                            <option value="Cinnamon Espresso">Cinnamon Espresso</option>
+                            <option value="Tahini">Tahini</option>
+                            <option value="Peanut Butter">Peanut Butter</option>
+                            <option value="Pistachio">Pistachio</option>
+                            <option value="Salted Almond">Salted Almond</option>
+                            <option value="Cashew">Cashew</option>
+                            <option value="Black Sesame">Black Sesame</option>
+                            <option value="Matcha">Matcha</option>
+                            <option value="Fresh Mint">Fresh Mint</option>
+                            <option value="Berry (Assorted)">Berry (Assorted)</option>
+                            <option value="Basil">Basil</option>
+                            <option value="Maple">Maple</option>
+                            <option value="Honey">Honey</option>
+                    </select>
+                </fieldset>
+                <fieldset>
+                    <div class="submitButton">
+                        <a href="mailto:info@thebutterwood.com"><img src="images/submit.png"></a>
+                    </div>
+                </fieldset>
+            </form>
+              
+            </div>
+        </div>
+        <div id="Pies" class="tabcontent">
+              <h3>Whole Pies</h3>
+              <p>Get yourself a whole pie!</p> 
+              <div id ="orderForm">
+                 <form>
+                <fieldset>
+                    <legend>Customer Information</legend>
+                    <h3>Customer Name:</h3>
+                    <input type="text" name="your name" size="20" maxlength="250" placeholder="Your Name" required>
+                    <h3>Billing Address:</h3>
+                    <input type="text" name="address" size="20" maxlength="250" placeholder="Address" required>
+                    <h3>Email Address:</h3>
+                    <input type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="abc@defg.com">
+                    <h3>Phone Number:</h3>
+                    <input required type="text" id="phone" name = "phone" >
+                </fieldset>
+                <fieldset>
+                    <legend>Pie</legend>
+                    <h3>Number of Pies:</h3>
+                    <select>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+                    <h3>Type of Pies:</h3>
+                    <select>
+                        <option value="Apple">Apple Pie</option>
+                        <option value="Blueberry">Blueberry Pie</option>
+                        <option value="Pecan">Pecan Pie</option>
+                        <option value="Pumpkin">Pumpkin Pie</option>
+                        <option value="Key">Key Lime Pie</option>
+                        <option value="Lemon">Lemon Meringue Pie</option>
+                        <option value="Cherry">Cherry Pie</option>
+                        <option value="Blackberry">Blackberry Pie</option>
+                        <option value="Strawberry">Strawberry Pie</option>
+                    </select>
+                </fieldset>
+                <fieldset>
+                    <legend>Pick Up</legend>
+                    <h3>Pick Up Date:</h3>
+                    <input type="date" id="txtDate" name="txtDate" required value="" size="20" maxlength="250">
+                    <h3>Pick Up Time:</h3>
+                    <input type="time" id="appt" name="appt" min="10:00" max="21:00" required>  
+                </fieldset>
+                <fieldset>
+                    <div class="submitButton">
+                        <img src="images/submit.png">
+                    </div>
+                </fieldset>
+            </form>
+              
+            </div>
+            
+         </div>
+
+         <script>
+            document.getElementById("defaultOpen").click();
+        </script>
+
+		<footer>
+            <p>The Butterwood Bake Consortium</p>
+            &copy;The Butterwood Bake Consortium<br/>
+            <div id = "otherLink">
+                <a href = "mailto:info@thebutterwood.com">Email Us</a>
+                <a href = "contact.html">Contact Us</a>
+            </div>
+            <div id = "pictureLink">
+                <a href="mailto:info@thebutterwood.com"  target="_blank"><img src="images/email.png"></a>
+                <a href="https://www.instagram.com/thebutterwoodbakeconsortium/?hl=en"  target="_blank"><img src ="images/instagram.png"></a>
+                <a href="https://www.facebook.com/thebutterwoodbakeconsortium/"  target="_blank"><img src="images/facebook.png"></a>
+            </div>
+        </footer>
+
+	</div>
+</body>

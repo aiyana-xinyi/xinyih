@@ -1,0 +1,540 @@
+body {
+	font-family: "Helvetica Neue", Helvetica, Arial, Sans-serif; /* Set all font in the page to Helvetica with font formating */
+	font-size: 100%; /* Generally set the font-size to 100% in the body - you can then change with em in the other areas */
+	line-height: 1.7em; /* The line-height property in CSS controls the space between lines of text. It is often set in a unitless value (e.g. line-height: 1.4; ) */
+	color: #000000; /* Hex Color Black */
+	background-color: pink;
+}
+
+#top_row {
+	border-bottom: 1px dotted #ccc;
+	padding: .5em .5em 3em .5em; 
+	background-color: pink;
+}
+
+#top_row header {
+	margin-bottom: -2.5em;
+
+}
+
+#top_row h1 {
+	font-size: 3.75em; /* http://pxtoem.com/ */
+	letter-spacing: -2px; /* The letter-spacing property increases or decreases the space between characters in a text. */
+}
+
+
+#top_row nav{
+	float:center;
+	text-align: center;
+}
+
+#top_row nav a {
+	text-decoration: none;
+	font-size: 1.125em;
+	font-weight: 300;
+	padding: 10px;
+	margin: 20px;
+	color: #ffffff; 
+	text-align: center;
+	float: center;
+	font-family: 'Antic Didone';
+}
+
+#top_row nav a.selected {
+	color: #8c2b7d;	
+}
+
+#paragraph{
+	background-color: pink;
+}
+
+#paragraph h1{
+	font-family: 'Alex Brush';
+	font-size:4em;
+	color: #8c2b7d;
+	text-align: center;
+	padding: 0.5em;
+	float:center;
+}
+
+#paragraph p{
+	font-family: 'Antic Didone';
+	font-size: 20px;
+	color: #8c2b7d;
+	margin-left: 120px;
+	margin-right: 120px;
+	text-align: center;
+	padding: 0.5em;
+}
+
+#paragraph img{
+	float:center;
+	text-align: center;
+}
+
+#container{
+	background-color: pink;
+	max-height: 500px;
+}
+
+.responsive{
+	max-width:100%;
+	height: auto;
+}
+
+
+/*slide show code from W3School */
+
+* {box-sizing: content-box;}
+.mySlides {
+	display: none;
+}
+
+/* Slideshow container */
+.slideshow-container {
+	background-color: pink;
+	max-width: 1380px;
+	height: 400px;
+	position: relative;
+	margin: auto;
+	float: center;
+	text-align: center
+}
+
+.slideshow-container img{
+	position:absolute;
+	top:25px;
+	left:25px;
+	height:400px;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  text-align: center;
+  float:center;
+  transition: background-color 0.6s ease;
+} 
+
+.active {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+.easter{
+	max-width: 200;
+	z-index: 1;
+}
+
+.cake1{
+	border-color: white;
+	margin-left: 100px;
+	padding-top: 20px;
+	padding-bottom: 10px;
+	max-height:360px;
+	z-index:3;
+}
+
+.weddingBackground{
+	max-width: 200;
+	z-index: 1;
+}
+
+.cake2{
+	border-color: white;
+	margin-left: 100px;
+	padding-top: 20px;
+	padding-bottom: 10px;
+	max-height:360px;
+	z-index:3;
+}
+
+.cakeBackground{
+	max-width: 200;
+	z-index: 1;
+}
+
+.cake3{
+	border-color: white;
+	margin-left: 100px;
+	padding-top: 20px;
+	padding-bottom: 10px;
+	max-height:360px;
+	z-index:3;
+}
+
+#News{
+	margin-left: 90px;
+}
+
+#News p{
+	font-size: 2em;
+}
+
+#News a{
+	margin-left: 30px;
+}
+
+.rectangle{
+
+}
+
+.rectangle h5{
+	font-color: black;
+	font-size: 20px;
+}
+
+#creations{
+
+}
+
+.text-block {
+	border-color: black;
+	font-family: 'Abril Fatface';
+	font-size: 40px;
+	z-index:100;
+	color: black;
+	position: absolute;
+	bottom: 40px;
+	right: 200px;
+	background-color: white;
+	padding-left:20px;
+	padding-right:20px;
+	max-width: 400px;
+}
+
+.text-block h5{
+	font-family: 'Abril Fatface';
+	font-size: 40px;
+}
+
+.text-block p{
+	font-family: 'Abril Fatface';
+	font-size: 20px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.box {
+	background-color: pink;
+  float: left;
+  width: 50%;
+  padding: 50px;
+  height: 500px;
+
+}
+
+.box h2{
+	margin-left: 90px;
+	font-size:40px;
+	font-family: 'Alex Brush';
+}
+.box a{
+	margin-left: 140px;
+	font-family: 'Antic Didone';
+	font-size:20px;
+	text-align: center;
+}
+
+.box img{
+	width:20%;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+ 
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+
+
+
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+} 
+
+
+/*Modified code from W3School*/
+
+/* Style the buttons inside the tab */
+.tab {
+	background-color: #bc65b5;
+}
+.tab button {
+	font-family: 'Antic Didone';
+  background-color: #bc65b5;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+  color: #ffffff;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #e579dc;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #e579dc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #bc65b5;
+  border-top: none;
+  background-color: pink;
+  color: grey;
+  text-align: center;
+}
+
+.tabcontent h3 {
+	font-family: 'Alex Brush';
+	text-align: center;
+	font-size: 4em;
+	color: #ffffff;
+}
+
+.tabcontent p{
+	font-family: 'Antic Didone';
+	font-size: 20px;
+	color: #8c2b7d;
+}
+
+.orderButton{
+	float: center;
+}
+
+
+#container-graph{
+	width:60%;
+	float: center; 
+	text-align: center;
+	margin-left: 250px;
+}
+#second-graph{
+	width:60%;
+	float: center; 
+	text-align: center;
+	margin-left: 250px;
+}
+
+#FindUs img{
+	width:40%;
+}
+
+/* Table Styling */
+table {
+	width: 75%;
+	border-style: solid;
+	border-width: 3px;
+	border-color: #af36a3;
+	border-spacing: 3px;
+	margin: auto;
+	table-layout: auto;
+	border-collapse: collapse;
+	font-family: 'Antic Didone';
+}
+th {
+	font-family: 'Antic Didone';
+	height: 40px;
+	font-weight: bold;
+}
+th, td {
+	font-family: 'Antic Didone';
+	padding: 2px;
+	text-align: center;
+	border-style: solid;
+	border-width: 1px;
+	color: #333333;
+}
+
+
+/* Form Styling */
+form {
+	width: 75%;
+	margin: auto;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #af36a3;
+	padding: 10px;	
+	background-color: pink;
+}
+
+legend {
+	font-weight: bold;
+	text-align: center;
+	color: #666666;
+	margin-bottom: 5px;
+	font-size: 20px;
+}
+
+label {
+	font-weight: bold;
+	text-align: center;
+}
+
+iframe {
+	display:block;
+	margin:auto;
+}
+
+html { overflow-y: scroll; }
+
+#orderForm{
+	float:center;
+	text-align:center;
+}
+
+#submitButton{
+	text-align: center;
+	float: center;
+}
+
+#orderForm h2{
+	font-size: 50px;
+	float:center;
+	text-align:center;
+	background-color: pink;
+}
+
+#orderForm h3{
+	font-size: 35px;
+	float:center;
+	text-align:center;
+	background-color: pink;
+}
+
+#orderForm fieldset{
+	font-family: 'Antic Didone';
+	
+}
+
+#contactForm input{
+	font-size: 20px;
+}
+
+#contactForm{
+	float:center;
+	text-align:center;
+}
+
+#contactForm h2{
+	font-family: 'Alex Brush';
+	color:#ffffff;
+	font-size: 50px;
+	float:center;
+	text-align:center;
+	background-color: pink;
+}
+#contactForm fieldset{
+	font-family: 'Antic Didone';
+	
+}
+#contactForm h3{
+	font-family: 'Antic Didone';
+	
+}
+
+#submitButton{
+	text-align: center;
+	float: center;
+}
+
+#contactForm h2{
+	font-size: 30px;
+	float:center;
+	text-align:center;
+	background-color: pink;
+}
+
+#contactForm h3{
+	font-size: 20px;
+	float:center;
+	text-align:center;
+	background-color: pink;
+}
+
+#contactForm input{
+	font-size: 20px;
+}
+
+footer {
+	clear: both; 
+	padding: .5em;
+	color: #333333;
+	font-variant: small-caps; 
+	font-size: .813em;
+	text-align: center;
+	border-top: 1px dotted #cccccc;
+	background-color: pink;
+}

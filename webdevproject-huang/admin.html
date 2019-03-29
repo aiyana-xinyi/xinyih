@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<link rel = "stylesheet" media="all" type="text/css" href="css/styles.css"/>
+	<meta charset="utf-8" />
+	<meta name="author" content="Aiyana Huang">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script type="text/javascript" src="js/scripts.js"></script>
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+
+	<script src="http://code.highcharts.com/highcharts.js"></script>
+  	<script src="http://code.highcharts.com/modules/exporting.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Antic Didone' rel='stylesheet'>
+
+  	<script type="text/javascript">
+  $(function() {
+    $('#extra-graph').highcharts({
+      chart: {
+        plotBackgroundColor: null,
+        plotBorderWidth: null,
+        plotShadow: false,
+        type: 'pie'
+    },
+    title: {
+        text: 'Percentages of Each Item Sold'
+    },
+    tooltip: {
+        pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+    },
+    plotOptions: {
+        pie: {
+            allowPointSelect: true,
+            cursor: 'pointer',
+            dataLabels: {
+                enabled: true,
+                format: '<b>{point.name}</b>: {point.percentage:.1f} %',
+                style: {
+                    color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
+                }
+            }
+        }
+    },
+    series: [{
+        name: 'Brands',
+        colorByPoint: true,
+        data: [{
+            name: 'Chocolate Cakes',
+            y: 49.58,
+            sliced: true,
+            selected: true
+        }, {
+            name: 'Apple Pies',
+            y: 18.37
+        }, {
+            name: 'Cupcakes',
+            y: 10.85
+        }, {
+            name: 'Pineapple Tartes',
+            y: 5.67
+        }, {
+            name: 'Vanilla Cakes',
+            y: 5.58
+        }, {
+            name: 'Strawberry Pies',
+            y: 4.39
+        }, {
+            name: 'Lemon Meringue Pie',
+            y: 3.10
+        }, {
+            name: 'Other',
+            y: 2.46
+        }]
+    }]
+
+    });
+
+  });
+</script>
+
+</head>
+
+<body>
+	<div id="container">
+		<div id = "top_row">
+			<nav> 
+				<a href="about.html" >About</a>
+				<a href="menu.html" >Menu</a>
+				<a href="order.html">Order</a>
+				<a href="index.html"><img src="images/logo1.png"></a>
+				<a href="contact.html">Contact Us</a>
+                <a href="location.html"  >Location/Hours</a>
+                <a href="admin.html" class = "selected">Admin</a>
+			</nav>
+		</div>
+
+		
+		
+		<div id="extra-graph" style="min-width: 310px; height: 400px; max-width: 600px; margin: 0 auto"></div>
+
+
+
+
+		<footer>
+            <p>The Butterwood Bake Consortium</p>
+            &copy;The Butterwood Bake Consortium<br/>
+            <div id = "otherLink">
+                <a href = "mailto:info@thebutterwood.com">Email Us</a>
+                <a href = "contact.html">Contact Us</a>
+            </div>
+            <div id = "pictureLink">
+                <a href="mailto:info@thebutterwood.com"  target="_blank"><img src="images/email.png"></a>
+                <a href="https://www.instagram.com/thebutterwoodbakeconsortium/?hl=en"  target="_blank"><img src ="images/instagram.png"></a>
+                <a href="https://www.facebook.com/thebutterwoodbakeconsortium/"  target="_blank"><img src="images/facebook.png"></a>
+            </div>
+        </footer>
+
+	</div>
+</body>

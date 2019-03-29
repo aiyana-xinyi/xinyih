@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<link rel = "stylesheet" media="all" type="text/css" href="css/styles.css"/>
+	<link rel = "stylesheet" media="all" type="text/css" href="css/jquery-ui.css"/>	
+	<link rel = "stylesheet" media="all" type="text/css" href="css/jquery.lightbox.css"/>
+	<meta charset="utf-8" />
+	<meta name="author" content="Aiyana Huang">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script type="text/javascript" src="js/scripts.js"></script>
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="js/scripts.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.js"></script>
+	<script type="text/javascript" src="js/jquery.lightbox.min.js"></script>
+	<link href='https://fonts.googleapis.com/css?family=Antic Didone' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Alex Brush' rel='stylesheet'>
+	<script>
+		$(function(){
+			$( "#menuTab" ).tabs({
+				event: "mouseover"
+			});
+			
+		});
+	</script>
+	<script type="text/javaScript">
+		$(function(){
+			$('#gallery a').lightBox();
+		});
+	</script>
+
+
+	
+
+</head>
+
+<body>
+	<div id = "container">
+		<div id = "top_row">
+			<nav> 
+				<a href="about.html" >About</a>
+				<a href="menu.html" class = "selected">Menu</a>
+				<a href="order.html">Order</a>
+				<a href="index.html"><img src="images/logo1.png"></a>
+				<a href="contact.html">Contact Us</a>
+                <a href="location.html" >Location</a>
+                <a href="admin.html" >Admin</a>
+			</nav>
+		</div>
+
+		<div class="tab">
+			  <button class="tablinks" onclick="menuTab(event, 'Wedding')" id = "defaultOpen">Wedding</button>
+			  <button class="tablinks" onclick="menuTab(event, 'Celebrations')">Celebrations</button>
+			  <button class="tablinks" onclick="menuTab(event, 'Anniversaries')">Anniversaries</button>
+			  <button class="tablinks" onclick="menuTab(event, 'Holidays')">Holidays</button>
+		</div>
+
+			<div id="Wedding" class="tabcontent">
+			  <h3>Wedding</h3>
+			  <p>Weddings are such a joyous occasion and each one is different! The same is true of our wedding cakes. We have an almost unlimited combination of flavors and styles to choose from. </p>
+
+			<p>Batters and fillings:
+			Our most popular batter is yellow, but we also offer red velvet, chocolate, marble, and others upon request. As for fillings, we recommend white buttercream icing, chocolate fudge icing, strawberry crème filling, vanilla pastry cream, or one of several fruit fillings (lemon, raspberry, apricot, strawberry, etc.). That being said, if you have something special in mind it can’t hurt to ask!</p>
+
+			<p>Sizes:
+			To keep proportionality and maintain structure, wedding cakes come in certain sizes with certain tier dimensions. If the size of the wedding party falls in between cake sizes, we can offer additional sheet cakes up to the amount of slices required.</p>
+
+			<p>Pricing:
+			Our wedding cakes vary in price, depending on type, size, and “extras” such as special fillings, pillars, etc. For example, the cakes seen above are in the $3.25 – $3.75 per serving range.</p>
+
+			<p>Other delicacies:
+			Our wedding cakes are really just the beginning. Lots of folks opt for Individual desserts (3” mini-cakes, cupcakes, etc.) and of course there’s always room in the celebration for Cookie Trays, Monogrammed Petit Fours, Junior Pastry Trays, Grooms’ Cakes, Shower Cakes, Monogrammed Cookies, Wedding Challah, Breakfast Trays, etc.</p>
+
+			<p>Delivery:
+			We co-ordinate with the reception venue, florist, etc. for the timing of the delivery of the cake. Delivery fees vary by location. Smaller cakes can be packed by us to facilitate pick-up at the bakery.</p><br>
+			  <div id = "gallery">
+				<div class="galleryThumbnail"><div id="thmbnlShadow">
+				<a href="images/cake4.png">
+				<img src="images/cake4LB.png" alt="image 1"/></a></div></div>
+
+				<div class="galleryThumbnail"><div id="thmbnlShadow">
+				<a href="images/cake2.png">
+				<img src="images/cake2LB.png" alt="image 2"></a></div></div>
+
+				<div class="galleryThumbnail"><div id="thmbnlShadow">
+				<a href="images/cake5.png">
+				<img src="images/cake5LB.png" alt="image 3"></a></div></div>
+			</div>
+
+			<div class="orderButton">
+				<a href="order.html"><img src="images/order.png"></a>
+			</div>
+			</div>
+
+			<div id="Celebrations" class="tabcontent">
+			  <h3>Celebrations</h3>
+			  <p>Birthdays, anniversaries, showers, graduations, religious celebrations etc. We have baked special treats for each of life’s special events and can customize them to showcase your theme or ideas. View our photo gallery on Facebook, and if you would like to inquire about a custom cake not available on our website, please email us at info@prantlsbakery.com.<p>
+
+			<p>Sizes:
+			We offer custom cake rounds sizes from 8”-12”. Sheet cakes can be ordered from the sizes of 1/4, 1/2, 3/4 and full. </p>
+
+			<p>Pricing:
+			Our cakes vary in price, depending on type, size, and “extras” such as decorations and personalizations.</p>
+			<p>Delivery:
+			Delivery fees vary by location. Smaller cakes can be packed by us to facilitate pick-up at the bakery.</p><br>
+
+
+			  <div id = "gallery">
+				  <div class="galleryThumbnail"><div id="thmbnlShadow">
+					<a href="images/cake7.png">
+					<img src="images/cake7LB.png" alt="image 4"/></a></div></div>
+
+					<div class="galleryThumbnail"><div id="thmbnlShadow">
+					<a href="images/cake8.png">
+					<img src="images/cake8LB.png" alt="image 5"></a></div></div>
+
+					<div class="galleryThumbnail"><div id="thmbnlShadow">
+					<a href="images/cake1.png">
+					<img src="images/cake1LB.png" alt="image 6"></a></div></div>
+				</div>
+
+				<div class="orderButton">
+				<a href="order.html"><img src="images/order.png"></a>
+				</div>
+			
+			</div>
+
+			<div id="Anniversaries" class="tabcontent">
+			  <h3>Anniversaries</h3>
+			  <p>Celebrate your special anniversary with us! We have an almost unlimited combination of flavors and styles to choose from. </p>
+			  	<div id = "gallery">
+				  <div class="galleryThumbnail"><div id="thmbnlShadow">
+					<a href="images/cake9.png">
+					<img src="images/cake9LB.png" alt="image 7"/></a></div></div>
+
+					<div class="galleryThumbnail"><div id="thmbnlShadow">
+					<a href="images/cake10.png">
+					<img src="images/cake10LB.png" alt="image 8"></a></div></div>
+
+					<div class="galleryThumbnail"><div id="thmbnlShadow">
+					<a href="images/cake11.png">
+					<img src="images/cake11LB.png" alt="image 9"></a></div></div>
+				</div>
+
+				<div class="orderButton">
+				<a href="order.html"><img src="images/order.png"></a>
+				</div>
+
+			</div>
+
+
+			<div id="Holidays" class="tabcontent">
+			  <h3>Holidays</h3>
+			  <p>From Valentine’s Day, Christmas, Thanksgiving, and Mardi Gras, we have cakes for your favorite occasions! </p>
+
+<p>Easter is right around the corner. Check out our baked goods that are perfect for your fun, colorful weekend, ranging from Easter themed cookies, cakes, cupcakes, and more.</p>
+			  	<div id = "gallery">
+				  <div class="galleryThumbnail"><div id="thmbnlShadow">
+					<a href="images/cake12.png">
+					<img src="images/cake12LB.png" alt="image 10"/></a></div></div>
+
+					<div class="galleryThumbnail"><div id="thmbnlShadow">
+					<a href="images/cake13.png">
+					<img src="images/cake13LB.png" alt="image 11"></a></div></div>
+
+					<div class="galleryThumbnail"><div id="thmbnlShadow">
+					<a href="images/cake14.png">
+					<img src="images/cake14LB.png" alt="image 12"></a></div></div>
+				</div>
+
+				<div id="orderButton">
+				<a href="order.html"><img src="images/order.png"></a>
+				</div>
+			</div>
+		
+
+		<script>
+			document.getElementById("defaultOpen").click();
+		</script>
+
+		<footer>
+            <p>The Butterwood Bake Consortium</p>
+            &copy;The Butterwood Bake Consortium<br/>
+            <div id = "otherLink">
+                <a href = "mailto:info@thebutterwood.com">Email Us</a>
+                <a href = "contact.html">Contact Us</a>
+            </div>
+            <div id = "pictureLink">
+                <a href="mailto:info@thebutterwood.com"  target="_blank"><img src="images/email.png"></a>
+                <a href="https://www.instagram.com/thebutterwoodbakeconsortium/?hl=en"  target="_blank"><img src ="images/instagram.png"></a>
+                <a href="https://www.facebook.com/thebutterwoodbakeconsortium/"  target="_blank"><img src="images/facebook.png"></a>
+            </div>
+        </footer>
+
+	</div>
+</body>

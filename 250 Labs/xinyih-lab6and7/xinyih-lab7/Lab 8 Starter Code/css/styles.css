@@ -1,0 +1,128 @@
+/* CSS Document */
+/* Slash-Star begins a comment, and then Star-Slash ends a comment */
+
+
+/* Set all font in the page to Helvetica with font formating */
+body {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 100%; /* Generally set the font-size to 100% in the body - you can then change with em in the other areas */
+	line-height: 1.7em; /* The line-height property in CSS controls the space between lines of text. It is often set in a unitless value (e.g. line-height: 1.4; ) */
+	color: #000000;
+}
+
+.container{
+	width: 70% !important;
+}
+
+.brand-logo {
+	font-size: 40px !important;
+	margin-left: 10px;
+
+}
+
+a {	
+	color: #0F4970;
+	text-decoration: none;
+}
+
+a:hover {	
+	color: #0F4970;
+	text-decoration: underline;
+}
+
+/* 
+Body is a called a selector - these declarations will be applied to everything in this selector.
+
+The color can be specified by: Color name, RGB value, Hex value.
+
+The font family of a text is set with the font-family property (should hold several font names as a "fallback" system). 
+If the browser does not support the first font, it tries the next font. 
+
+Font size can be absolute or relative.
+To allow users to resize the text (in the browser menu), many developers use em instead of pixels.
+The em size unit is recommended by the W3C.
+1em is equal to the current font size. The default text size in browsers is 16px. So, the default size of 1em is 16px.
+The size can be calculated from pixels to em using this formula: pixels/16=em.
+http://www.w3schools.com/css/css_font.asp
+*/
+
+
+/* The container ID will hold our full webpage together */
+
+
+footer {
+	clear: both; /* The clear property specifies which side(s) of an element other floating elements are not allowed. */
+	margin: 0;
+	padding: .5em;
+	color: #333333;
+	font-variant: small-caps; 
+	font-size: .813em;
+	text-align: center;
+	border-top: 1px dotted #cccccc;
+	
+	/* background-color: #ddd; */
+}
+
+
+
+
+/* Lab 4 Solution */
+
+/* Table Styling */
+table {
+	width: 75%;
+	border-style: solid;
+	border-width: 3px;
+	border-color: #075F8A;
+	border-spacing: 3px;
+	margin: auto;
+	table-layout: auto;
+	border-collapse: collapse;
+}
+th {
+	height: 40px;
+	font-weight: bold;
+}
+th, td {
+	padding: 2px;
+	text-align: center;
+	border-style: solid;
+	border-width: 1px;
+	color: #333333;
+}
+
+
+/* Form Styling */
+form {
+	width: 75%;
+	margin: auto;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #075F8A;
+	padding: 10px;	
+}
+
+legend {
+	font-weight: bold;
+	text-align: center;
+	color: #666666;
+	margin-bottom: 5px;
+}
+
+label {
+	font-weight: bold;
+	text-align: center;
+}
+
+html { overflow-y: scroll; }
+/* http://www.w3schools.com/cssref/css3_pr_overflow-y.asp */
+
+iframe {
+  display:block;
+  margin:auto;
+}
+
+.responsive {
+    max-width: 100%;
+    height: auto;
+}

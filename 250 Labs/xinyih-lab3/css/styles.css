@@ -1,0 +1,173 @@
+body{
+	font-family: "Helvetica Neue", Helvetica, Arial, Sans-serif;
+	font-size: 100%;
+	line-height: 1.7em;
+	color:#000000;
+}
+
+#container {
+	width:70%;
+	margin: 10px auto;
+	/*border: 1px solid grey;*/
+}
+
+#top_row {
+	border-bottom: 1px dotted #cccccc;
+	padding: .5em .5em 3em .5em;
+	margin-bottom: -2.5em;
+}
+
+#top_row h1{
+	color: #af36a3;
+	font-size: 3.75em;
+	letter-spacing: -2px;
+}
+
+#top_row h3{
+	font-size:1,125em;
+	font-weight:200;
+}
+#top_row nav{
+	float: right;
+}
+
+#top_row nav a {
+	text-decoration: none;
+	font-size: 1.125em;
+	font-weight:400;
+	padding:15px;
+	color:#000000;
+}
+
+#top_row nav a.selected{
+	background:#f6f6f6;
+	color:#bbbbbb;
+}
+
+#top_row nav a.selected:hover{
+	background:#f6f6f6;
+	color: #af36a3;
+}
+
+#top_row nav a:hover{
+	background: #f6f6f6;
+	color: #af36a3;
+}
+
+#content img {
+	float: left;
+	margin: 1em;
+}
+
+#bio{
+	margin-left: 3em;
+	font-size: .875em;
+}
+
+#bio a {
+	text-decoration: none;
+	border-bottom: 1px dotted #000;
+	color: #000;
+	margin-left: 250px;
+}
+
+#bio a:hover{
+	color: #af36a3;
+}
+
+#content {
+	float: left;
+	width: 70%;
+	margin: 0;
+	padding: 1em;
+	border-right: 1px dotted #ccc;
+}
+
+#content h3{
+	font-family: Georgia, serif;
+	font-size: 1.5em;
+	margin: 30px 0 10px 0;
+	font-weight: normal;
+}
+
+#sidebar{
+	margin-top:20px;
+	width: 200px
+	float: left;
+	padding: 1em;
+	font-size: .875em;
+}
+
+#sidebar h3 {
+	font-size: 1.125em;
+	border-bottom: 1px dotted #ccc;
+}
+
+#carnegieLink a{
+	color: #af36a3;
+	text-decoration:none;
+}
+
+#carnegieLink a:hover{
+	text-decoration:underline;
+}
+
+#otherLink a{
+	color: #af36a3;
+	text-decoration:none;
+}
+#otherLink a:hover{
+	text-decoration:underline;
+}
+
+table {
+	width:75%;
+	border: 3px solid #af36a3;
+	border-spacing:3px;
+	margin-top: 50px;
+	margin-left: 70px;
+	table-layout: fluid;
+	border-collapse: collapse;
+	padding: 2px;
+}
+
+tr{
+	
+	text-align: center;
+	boarder: 1px #333333;
+}
+
+th{
+	line-height: 40px;
+}
+
+form{
+	width:75%;
+	margin-left: 40px;
+	border: 1px solid #af36a3;
+	padding: 10px;
+}
+
+legend{
+	font:bold;
+	text-align: center;
+	color: #666666;
+	margin-bottom: 5px
+}
+
+
+footer {
+	clear: both;
+	margin: 0;
+	padding: .5em;
+	color: #333333;
+	font-variant: small-caps;
+	font-size: .813em;
+	text-align: center;
+}
+
+html{
+	overflow-y: scroll;
+}
+
+

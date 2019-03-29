@@ -1,0 +1,186 @@
+<!DOCTYPE html> 	<!-- Tells the browser this is HTML 5 -->
+<html lang="en"> 	<!-- Root of the html document and is in English -->
+
+<head> 
+<!-- The HEAD section has (mostly) items that are not directly seen by the user -->
+
+	<!-- META tags help search engines identify your content more easily -->
+	<meta charset="utf-8" /> <!-- Specifies the character encoding for the HTML document -->
+	<meta name="author" content="Jeria Quesenberry">
+	<meta name="keywords" content="Carnegie Mellon University, Information Systems, resume">
+	<meta name="description" content="Jane Doe Professional Website">
+
+	<!-- The title will appear in the menu bar of the browser -->
+	<title>Jane Doe</title>
+	
+	<!-- External Links to CSS files -->
+    <link rel="stylesheet" media="all" type="text/css" href="css/styles.css" />
+    <link rel="stylesheet" media="all" type="text/css" href="css/jquery-ui.css" />
+    <link rel="stylesheet" type="text/css" href="css/jquery.lightbox.css">
+
+    <!-- External Links to JS files -->
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js" ></script>
+    <script type="text/javascript" src="js/scripts.js" ></script>
+    <script type="text/javascript" src="js/jquery-ui.js" ></script>
+    <script type="text/javascript" src="js/jquery.lightbox.min.js"></script>
+    <script>
+		$(function() {
+			$( "#accordion" ).accordion();
+		});
+    </script>
+    <script>
+		$(function() {
+		  	$( "#tabs" ).tabs({
+		    	event: "mouseover"
+		  	});
+		});
+    </script>
+    <script type="text/JavaScript">
+   		$(function() {
+        	$('#gallery a').lightBox();
+		});
+	</script>
+
+	
+</head>
+    
+<body>
+
+<div id="container">
+	
+	<div id="top_row">
+	
+	<header> 
+		<h1>Jane Doe</h1>
+		<h3>Carnegie Mellon University, Information Systems Program</h3>
+	</header>
+	
+	<nav>
+	    <a href="index.html">About</a>
+	    <a class="selected" href="projects.html">Projects</a> 
+	    <a href="contact.html">Contact</a>
+	</nav>
+
+</div>
+	
+	<div id="content">
+		<h3>Projects</h3>
+	  <div id="accordion">
+	  	<h4>Case Analysis Project</h4>
+		<div><p>
+		  Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+		  ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
+		  amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
+		  odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
+		  </p></div>
+		<h4>Web Development Project</h4>
+		<div><p>
+		  Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
+		  purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor
+		  velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In
+		  suscipit faucibus urna.
+		  </p></div>
+		<h4>Database Project</h4>
+		<div><p>
+		  Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
+		  Phasellus pellentesque purus in massa. Aenean in pede. Phasellus
+		  lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
+		  </p>
+		  <ul>
+		    <li>List item one</li>
+		    <li>List item two</li>
+		    <li>List item three</li>
+		  </ul>
+		</div>
+	  </div>
+	  <div id="tabs">
+		<ul>
+		  <li><a href="#tabs-1">Case Analysis Project</a></li>
+		  <li><a href="#tabs-2">Web Dev Project</a></li>
+		  <li><a href="#tabs-3">Database Project</a></li>
+		</ul>
+		                                               
+		<div id="tabs-1">
+		  <p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo. Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum. Aliquam nulla. Duis aliquam molestie erat.</p>
+		</div>
+		                                                              
+		<div id="tabs-2">
+		  <p>Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse sed ligula in ligula suscipit aliquam. Praesent in eros vestibulum mi adipiscing adipiscing. Morbi facilisis. Curabitur ornare consequat nunc. Aenean vel metus. Ut posuere viverra nulla. Aliquam erat volutpat. Pellentesque convallis.</p>
+		</div>
+		                                                               
+		<div id="tabs-3">
+		  <p>Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales. Quisque eu urna vel enim commodo pellentesque.</p>
+		</div>
+	  </div>
+
+	  <div id="content-gallery">
+	  	<p>Click on the thumbnail to see full image and description</p>
+		<div id="gallery">
+		<div id="galleryThumbnail"><div id="thmbnlShadow">
+		<a href="images/image1.jpg" title="The case analysis project evaluated a variety of enterprise layer concepts at Cirque du Soleil.">
+		<img src="images/image1thumb.jpg" alt="image 1"/></a></div></div>
+		 
+		<div id="galleryThumbnail"><div id="thmbnlShadow">
+		<a href="images/image2.jpg" title="The web development project utilized several front-end web development techniques using HTML, CSS, and JavaScript.">
+		<img src="images/image2thumb.jpg" alt="image 2"></a></div></div>
+		 
+		<div id="galleryThumbnail"><div id="thmbnlShadow">
+		<a href="images/image3.jpg" title="The database project included a entity relationship diagram and several data creation and manipulation techniques in MySQL.">
+		<img src="images/image3thumb.jpg" alt="image 3"></a></div></div>
+		</div>
+	  </div>
+
+	  <table border="4">
+		  <tr>
+		    <th colspan="3">Course Projects</th>
+		  </tr>
+		  <tr>
+			  <th>Title</th>
+			  <th>Course</th> 
+			  <th>Semester</th>
+		  </tr>
+		  <tr onmouseover="showDescription('In the case analysis project, we analyzed Air Canada and described how we could improve their process');" onmouseout="hideDescription();">
+			  <td>Case Analysis Project</td>
+			  <td>67-250</td> 
+			  <td>Spring 2019</td>
+		  </tr>
+		  <tr onmouseover="showDescription('In the web development project, we applied our web dev lab skills to a real world senario.');" onmouseout="hideDescription();">
+			  <td>Web Development Project</td>
+			  <td>67-250</td> 
+			  <td>Spring 2019</td>
+		  </tr>
+		  <tr onmouseover="showDescription('In the database project, we learned how to model the of a company in relational form.');" onmouseout="hideDescription();">
+			  <td>Database Project</td>
+			  <td>67-250</td> 
+			  <td>Spring 2019</td>
+		  </tr>
+	  </table> 
+	  <div id="description"></div>
+		
+	</div> <!-- Close content -->
+	
+	<div id="sidebar">
+		<h3>Find Me</h3>
+		<strong>Jane Doe</strong><br/>
+		<a href="http://www.cmu.edu" target="_blank">Carnegie Mellon University</a><br/>
+		5000 Forbes Avenue<br/>
+		Pittsburgh, PA 15213<br/>
+		412-268-0000 (h)<br/>
+		412-555-5555 (c)<br/><br/>
+		<a href="mailto:jquesenberry@cmu.edu"><img src="images/email.png"></a>
+		<a href="http://www.linkedin.com" target="_blank"><img src="images/linkedin.png"></a>
+		<a href="http://www.facebook.com" target="_blank"><img src="images/facebook.png"></a>
+	</div> <!--Close sidebar  -->
+	
+	<footer>
+		&copy; Jane Doe<br/>
+		<a href="mailto:janedoe@cmu.edu">Email Me</a>
+		<!-- Anchor tags can take you to pages outside the site, within the site or within the page. -->
+	    <a href="http://cmu.edu" target="_blank">Carnegie Mellon University</a>
+	    <!-- This anchor takes us to another site (href starts with "http://...") so this is an absolute link. -->
+	</footer>
+
+</div>	
+</body>
+
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<link rel = "stylesheet" media="all" type="text/css" href="css/styles.css"/>
+	<meta charset="utf-8" />
+	<meta name="author" content="Aiyana Huang">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script type="text/javascript" src="js/scripts.js"></script>
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+
+	<script src="http://code.highcharts.com/highcharts.js"></script>
+  	<script src="http://code.highcharts.com/modules/exporting.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Antic Didone' rel='stylesheet'>
+
+  	<script>
+		$(function(){
+			$( "#menuTab" ).tabs({
+				event: "mouseover"
+			});
+			
+		});
+	</script>
+
+  	<script type="text/javascript">
+  $(function() {
+    $('#container-graph').highcharts({
+      title: {
+        text: 'Popular times on Wed–Fri (avg per day)'
+    },
+    subtitle: {
+      text: "Popular Visit Times",
+    },
+
+    xAxis: {
+        title: {
+            text: 'Time'
+        },
+        categories:['12pm','1pm','2pm','3pm','4pm','5pm','6pm','7pm','8pm','9pm','10pm','11pm']
+    },
+
+    yAxis: {
+        title: {
+            text: 'Average number of visitors'
+        },
+    },
+    legend: {
+        layout: 'vertical',
+        align: 'right',
+        verticalAlign: 'middle'
+    },
+    
+    tooltip: {
+        valueSuffix: 'number of visitors (on average)'
+    },
+
+    plotOptions: {
+        series: {
+            label: {
+                connectorAllowed: false
+            },
+        }
+    },
+
+    series: [{
+        name: 'Wed-Fri',
+        data: [10,8,24,5,7,32,16,18,27,39,32,22]
+    }],
+    });
+
+  });
+</script>
+<script type="text/javascript">
+  $(function() {
+    $('#second-graph').highcharts({
+      title: {
+        text: 'Popular times on Sat and Sun (avg per day)'
+    },
+    subtitle: {
+      text: "Popular Visit Times",
+    },
+
+    xAxis: {
+        title: {
+            text: 'Time'
+        },
+        categories:['10am','11am','12pm','1pm','2pm','3pm','4pm','5pm','6pm','7pm','8pm','9pm']
+    },
+
+    yAxis: {
+        title: {
+            text: 'Average number of visitors'
+        },
+    },
+    legend: {
+        layout: 'vertical',
+        align: 'right',
+        verticalAlign: 'middle'
+    },
+    
+    tooltip: {
+        valueSuffix: 'number of visitors (on average)'
+    },
+
+    plotOptions: {
+        series: {
+            label: {
+                connectorAllowed: false
+            },
+        }
+    },
+
+    series: [{
+        name: 'Sat-Sun',
+        data: [30,33,50,48,25,28,27,24,46,66,73,70]
+    }],
+    });
+
+  });
+</script>
+
+</head>
+
+<body>
+	<div id="container">
+		<div id = "top_row">
+			<nav> 
+				<a href="about.html" >About</a>
+				<a href="menu.html" >Menu</a>
+				<a href="order.html">Order</a>
+				<a href="index.html"><img src="images/logo1.png"></a>
+				<a href="contact.html">Contact Us</a>
+                <a href="location.html" class = "selected" >Location/Hours</a>
+                <a href="admin.html" >Admin</a>
+			</nav>
+		</div>
+
+		<div class="tab">
+			  <button class="tablinks" onclick="menuTab(event, 'Hours')" id = "defaultOpen">Hours</button>
+			  <button class="tablinks" onclick="menuTab(event, 'Location')">Location</button>
+		</div>
+		<div id="Hours" class="tabcontent">
+			<p>Find Out When's the Best Time to Visit Us:</p>
+			<div id="container-graph"></div>
+			<br><br>
+			<div id="second-graph"></div>
+            <br><br>
+		</div>
+		<div id="Location" class="tabcontent">
+			<p>Come Visit Us in Store!</p>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3034.744728880493!2d-79.95592604935712!3d40.480912059556694!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8834f2f80929711b%3A0x169402af50d86e6c!2sThe+Butterwood+Bake+Consortium!5e0!3m2!1sen!2sus!4v1553367484008" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <br><br>
+		</div>
+
+			
+		<script>
+			document.getElementById("defaultOpen").click();
+		</script>
+
+		<footer>
+            <p>The Butterwood Bake Consortium</p>
+            &copy;The Butterwood Bake Consortium<br/>
+            <div id = "otherLink">
+                <a href = "mailto:info@thebutterwood.com">Email Us</a>
+                <a href = "contact.html">Contact Us</a>
+            </div>
+            <div id = "pictureLink">
+                <a href="mailto:info@thebutterwood.com"  target="_blank"><img src="images/email.png"></a>
+                <a href="https://www.instagram.com/thebutterwoodbakeconsortium/?hl=en"  target="_blank"><img src ="images/instagram.png"></a>
+                <a href="https://www.facebook.com/thebutterwoodbakeconsortium/"  target="_blank"><img src="images/facebook.png"></a>
+            </div>
+        </footer>
+
+	</div>
+</body>

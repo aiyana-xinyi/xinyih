@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<meta charset="utf-8" />
+	<meta name="author" content="Aiyana Huang">
+	<meta name="keywords" content="Carnegie Mellon University, Information Systems">
+	<meta name="description" content="Professional Website">
+  <link rel = "stylesheet" media="all" type="text/css" href="css/styles.css"/>
+
+  <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="js/scripts.js"></script>
+
+  <script src="http://code.highcharts.com/highcharts.js"></script>
+  <script src="http://code.highcharts.com/modules/exporting.js"></script>
+
+  <script type="text/javascript">
+  $(function() {
+    $('#container-graph').highcharts({
+      title: {
+        text: 'Weekly Workload by Month'
+    },
+    subtitle: {
+      text: "Hours per week of work from 2015-2018",
+    },
+
+    xAxis: {
+        title: {
+            text: 'Months'
+        },
+        categories:['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec']
+    },
+
+    yAxis: {
+        title: {
+            text: 'Average hours worked each week'
+        },
+    },
+    legend: {
+        layout: 'vertical',
+        align: 'right',
+        verticalAlign: 'middle'
+    },
+    
+    tooltip: {
+        valueSuffix: 'hours per week (on average)'
+    },
+
+    plotOptions: {
+        series: {
+            label: {
+                connectorAllowed: false
+            },
+            pointStart: 2012
+        }
+    },
+
+    series: [{
+        name: '2012',
+        data: [43934, 52503, 57177, 69658, 97031, 119931, 137133, 154175]
+    }, {
+        name: '2013',
+        data: [24916, 24064, 29742, 29851, 32490, 30282, 38121, 40434]
+    }, {
+        name: '2014',
+        data: [11744, 17722, 16005, 19771, 20185, 24377, 32147, 39387]
+    }, {
+        name: '2015',
+        data: [null, null, 7988, 12169, 15112, 22452, 34400, 34227]
+    }, {
+        name: '2016',
+        data: [12908, 5948, 8105, 11248, 8989, 11816, 18274, 18111]
+    }],
+    });
+
+  });
+</script>
+
+</head>
+
+<body>
+  <div id = "container">
+
+    <div id = "top_row">
+    	<header>
+    		<h1>Aiyana Huang</h1>
+    		<h3>Carnegie Mellon University, Information Systems</h3>
+
+    	</header>
+
+    	<nav> 
+    		<a href="index.html" >About</a>
+    		<a href="projects.html">Projects</a>
+    		<a href="contact.html"class = "selected">Contact</a>
+    	</nav>
+    </div>
+
+  	<div id="content">
+  		<h3>Contact</h3>
+  		<p>Please use the below form to get in touch with me.</p>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.4199973378254!2d-79.94549812048868!3d40.44384026201575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8834f223e2a39a91%3A0xde4e97a9478f1891!2s5000+Forbes+Ave%2C+Pittsburgh%2C+PA+15213!5e0!3m2!1sen!2sus!4v1551912277533" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+  	<br>
+    <p>Please check to see when I'm free</p>
+  	<div id="container-graph"></div>
+    <br>
+    <form onsubmit="return validate()">
+
+  		<fieldset>
+     			<legend>Tell me more about yourself </legend>
+  			  <h5>Your Name:</h5>
+    			<input type="text" name="your name" size="20" maxlength="250" placeholder="Your Name">
+    			<h5>Your date of birth:</h5>
+    			<input type="date" id="txtDate" name="txtDate" required value="" size="20" maxlength="250">
+    		</fieldset>
+        <br>
+    		<fieldset>
+    			<legend>Tell me about your preferences</legend>
+    				<h5>Your favorite flower color:</h5>
+    				<input type="color" name="favcolor" value="#ff0000">
+    				<br>
+    				<h5>Message:</h5>
+    				<textarea rows="10" cols="50" maxlength="1000">
+    				</textarea>
+    				<br>
+    		</fieldset>
+    		<fieldset>
+    			<legend>Let's stay in touch</legend>
+    				<h5>How did you find out about me?</h5>
+    				<select>
+    					<option value="google">Google</option>
+    					<option value="news article">News article</option>
+    					<option value="friend">Friend</option>
+    					<option value="other">Other</option>
+  				</select>
+    				<br>
+    				<h5>Please indicate if you want to receive updates via email:</h5>
+    				<form>
+    					<input type="checkbox" name="email" value="yes">Yes, please update me!<br>
+    				<h5>Please provide your email address:</h5>
+    				<input type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="abc@defg.com" required>
+    				<br>
+            <h5> Enter your phone number, only numbers without dashes are accepted</h5>
+            <input required type="text" id="phone" name = "phone" >
+    				<h5>Choose a password:</h5>
+    				<input type="password" name="psw" size="20">
+    				<br>
+    		</fieldset>
+    		<fieldset>
+    			<br>
+    			<input type="image" name="submit" value="Submit" img src="images/submit.png">
+    		</fieldset>
+  	</form>
+
+  		
+  	</div>
+  	<div id = "sidebar">
+      <h3>Contact</h3>
+      <strong>Aiyana Huang</strong><br>
+      <div id = "carnegieLink">
+        <a href ="http://www.cmu.edu" target = "_blank">Carnegie Mellon University</a><br>
+      </div>
+      5000 Forbes Avenue</br>
+      Pittsburgh, PA 15213</br>
+      425-344-3278</br>
+      <a href="mailto:xinyih@andrew.cmu.edu"><img src="images/email.png"></a>
+      <a href="https://www.linkedin.com/in/xinyi-huang-644549177/"><img src ="images/linkedIn.png"></a>
+      <a href="https://www.facebook.com/aiyana.huang.5"><img src="images/facebook.png"></a>
+    </div>
+
+  	<footer>
+
+  	&copy; Aiyana Huang<br/>
+  	<div id="otherLink">
+      <a href = "mailto:xinyih@andrew.cmu.edu">Email Me</a>
+      <a href = "http://cmu.edu" target = "_blank">Carnegie Mellon University</a><br>
+    </div>
+  	</footer>
+	 	
+  </div>
+
+</body>
+
+</html> 

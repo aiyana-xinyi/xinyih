@@ -1,0 +1,184 @@
+<!DOCTYPE html> 	<!-- Tells the browser this is HTML 5 -->
+<html lang="en"> 	<!-- Root of the html document and is in English -->
+
+<head> 
+<!-- The HEAD section has (mostly) items that are not directly seen by the user -->
+
+	<!-- META tags help search engines identify your content more easily -->
+	<meta charset="utf-8" /> <!-- Specifies the character encoding for the HTML document -->
+	<meta name="author" content="Jeria Quesenberry">
+	<meta name="keywords" content="Carnegie Mellon University, Information Systems, resume">
+	<meta name="description" content="Jane Doe Professional Website">
+
+	<!-- The title will appear in the menu bar of the browser -->
+	<title>Jane Doe</title>
+
+	<!--Let browser know website is optimized for mobile-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	
+	<!--Let browser know website is optimized for mobile-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	
+	<!-- External Links to CSS files -->
+    <link rel="stylesheet" media="all" type="text/css" href="css/styles.css" />
+    <link rel="stylesheet" media="all" type="text/css" href="css/jquery-ui.css" />
+	<link rel="stylesheet" media="screen and (max-width: 480px)" href="css/stylesmobile.css" />
+
+    <!-- External Links to JS files -->
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js" ></script>
+    <script type="text/javascript" src="js/jquery-ui.js" ></script>
+	<script type="text/javascript" src="js/scripts.js" ></script>
+	
+		
+ 	<!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  
+	<script src="http://code.highcharts.com/highcharts.js"></script>
+	<script src="http://code.highcharts.com/modules/exporting.js"></script>
+	<script type="text/javascript">
+	
+	$(function () {
+	    $('#container-graph').highcharts({
+							
+	        title: {
+	            text: 'Weekly Workload by Month',
+	        },
+	        subtitle: {
+	            text: 'Hours per week of work from 2014-2017',
+	        },
+	        xAxis: {
+	        	title: {
+	                text: 'Months'
+	            },
+	            categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
+	                'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+	        },
+	        yAxis: {
+	            title: {
+	                text: 'Average hours worked each week'
+	            },
+	        },
+	        tooltip: {
+	            valueSuffix: ' hours per week (on average)'
+	        },
+	        legend: {
+	            layout: 'vertical',
+	            align: 'right',
+	            verticalAlign: 'middle',
+	        },
+	        series: [{
+	            name: '2017',
+	            data: [7.0, 6.9, 9.5, 14.5, 18.2, 21.5, 25.2, 26.5, 23.3, 18.3, 13.9, 9.6]
+	        }, {
+	            name: '2016',
+	            data: [-0.2, 0.8, 5.7, 11.3, 17.0, 22.0, 24.8, 24.1, 20.1, 14.1, 8.6, 2.5]
+	        }, {
+	            name: '2015',
+	            data: [-0.9, 0.6, 3.5, 8.4, 13.5, 17.0, 18.6, 17.9, 14.3, 9.0, 3.9, 1.0]
+	        }, {
+	            name: '2014',
+	            data: [3.9, 4.2, 5.7, 8.5, 11.9, 15.2, 17.0, 16.6, 14.2, 10.3, 6.6, 4.8]
+	        }]
+	        
+	    });
+	});
+	</script>
+	
+</head>
+    
+<body>
+		
+	<nav>
+		<div class="nav-wrapper">
+			<a href="index.html" class="brand-logo">Jane Doe</a>
+			<ul id="nav-mobile" class="right hide-on-med-and-down">
+				<li class="active"><a href="index.html">About</a></li>
+				<li><a href="projects.html">Projects</a> </li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</div>
+	</nav>
+	
+<div class="container">
+
+	  <p>Please use the below map to find me.</p>
+	  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6072.756348689774!2d-79.9413763!3d40.44476610000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8834f223e2a39a91%3A0xde4e97a9478f1891!2s5000+Forbes+Ave%2C+Pittsburgh%2C+PA+15213!5e0!3m2!1sen!2sus!4v1456685452426" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+	  <p>Please check to see when I'm free.</p>
+	  <div id="container-graph"></div>
+
+	  <p>Please use the below form to get in touch with me.</p>
+	  
+	  <form onsubmit="return validate()">
+	  
+	  <fieldset>
+		  <legend>Tell me more about yourself</legend>
+		  <label for="uname">Name:</label> <br/>
+		  <input type="text" id="uname" name="uname" value="Your Name" size="20" maxlength ="250"><br/><br/>
+		  <label for="txtDate">Your date of birth:</label> <br>
+		  <input type="date" id="txtDate" name="txtDate" value="" size="20" maxlength ="250"><br/><br/>
+	  </fieldset>
+	  
+	  <fieldset>
+		  <legend>Tell me about your preferences</legend>
+		  <label for="flower">Your favorite flower color:</label> <br/>
+		  <input type="color" id="flower" name="flower" value="Your favorite flower color" ><br/><br/>
+		  <label fr="message">Message:</label> <br/>
+		  <textarea id="message" name="message" value="Type your Message" rows="10" cols="50" maxlength="1000"> </textarea><br/><br/>
+	  </fieldset>
+	  
+	  <fieldset>
+		  <legend>Let's stay in touch</legend>
+		  <label for="source">How did you find out about me?</label>
+		  <select name="source">
+			  <option value="Google" selected>Google</option>
+			  <option value="news">News article</option>
+			  <option value="friend">Friend</option>
+			  <option value="other">Other</option><br/>
+		  </select><br/><br/>
+
+		  <label>Please indicate if you want to receive updates via email:</label><br/>
+		  <input type="checkbox" id="signup" name="signup" value="yes">Yes, please update me!<br/><br/>
+		  <label for="email">Please provide your email address:</label><br/>
+		  <input type="email" id="email" name="email" value="" Placeholder = "abc@defg.com" required ><br/><br/>
+		  <label for="phone">Please provide your phone number (no dashes or spaces):</label><br/>
+		  <input type="text" id="phone" name="phone" value="" Placeholder = "1234567890" required ><br/><br/>
+		  <label for="pswrd">Choose a password:</label><br/>
+		  <input type="password" id="pswrd" name="pswrd" value="" size="20" maxlength="20"><br/>
+	  </fieldset>
+	  
+	  <fieldset>
+	  	  <input type ="image" src="images/submit.png" alt="Submit" name= "btnimage" value ="Submit">
+	  </fieldset>
+	  
+	  </form>
+	  	
+</div> <!-- Close container -->	
+
+<footer class="page-footer">
+	<div class="container">
+		<div class="row">
+			<div class="col l12 s12">
+				<a href="mailto:jquesenberry@cmu.edu"><img src="images/email.png"></a>
+				<a href="http://www.linkedin.com" target="_blank"><img src="images/linkedin.png"></a>
+				<a href="http://www.facebook.com" target="_blank"><img src="images/facebook.png"></a>
+			</div>
+		</div>
+	</div>
+	<div class="footer-copyright">
+		<div class="container">
+			&copy; Jane Doe<br/>
+			5000 Forbes Avenue<br/>
+			Pittsburgh, PA 15213<br/>
+			412-268-0000 (h)<br/>
+			412-555-5555 (c)<br/><br/>
+		</div>
+	</div>
+</footer>
+</body>
+
+</html>

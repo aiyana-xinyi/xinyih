@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<link rel = "stylesheet" media="all" type="text/css" href="css/styles.css"/>
+	<link rel = "stylesheet" media="all" type="text/css" href="css/jquery-ui.css"/>	
+	<link rel = "stylesheet" media="all" type="text/css" href="css/jquery.lightbox.css"/>
+	<meta charset="utf-8" />
+	<meta name="author" content="Aiyana Huang">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script type="text/javascript" src="js/scripts.js"></script>
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="js/scripts.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.js"></script>
+	<script type="text/javascript" src="js/jquery.lightbox.min.js"></script>
+	<link href='https://fonts.googleapis.com/css?family=Antic Didone' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Alex Brush' rel='stylesheet'>
+	<script>
+		$(function(){
+			$( "#menuTab" ).tabs({
+				event: "mouseover"
+			});
+			
+		});
+	</script>
+
+</head>
+
+<body>
+	<div id="container">
+		<div id = "top_row">
+			<nav> 
+				
+				<a href="about.html" >About</a>
+				<a href="menu.html">Menu</a>
+				<a href="order.html">Order</a>
+				<a href="index.html"><img src="images/logo1.png"></a>
+				<a href="contact.html"  class = "selected">Contact Us</a>
+				<a href="location.html" >Location/Hours</a>
+				<a href="admin.html">Admin</a>
+			</nav>
+		</div>
+
+		<div class="tab">
+			  <button class="tablinks" onclick="menuTab(event, 'Contact Us')" id = "defaultOpen">Contact Us</button>
+			  <button class="tablinks" onclick="menuTab(event, 'FindUs')">Find Us</button>
+		</div>
+
+		<div id="Contact Us" class="tabcontent">
+			<form onsubmit="return validate()" action="mailto:infoneeded@butterwoodBC.com" method="post">
+			<div id ="contactForm">
+	    		<h2>Keep in Touch with Us!</h2>
+	    			<fieldset>
+	    	 			<legend>Personal Information</legend>
+	    				<h3>What's your name?</h3>
+	    				<input type="text" name="your name" size="20" maxlength="250" placeholder="Your Name" required>
+	    				<h3>What's your zipcode?</h3>
+	    				<input id="zipcode" name = "Zipcode" > 
+	   					<h3>What's your email?</h3>
+	   					<input type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="abc@defg.com" required>
+	    			</fieldset>
+	    			<fieldset>
+	    	 			<legend>Message</legend>
+	    				<h3>What's your Inquiry?</h3>
+	    				<textarea rows="10" cols="50" maxlength="1000"></textarea>
+	    			</fieldset>
+	    			<fieldset>
+	    	 			<legend>Keep in Touch with Us</legend>
+	    				<h3>Do you want to subscribe to our mailing list?</h3>
+	    				<input type="checkbox" name="email" value="yes">Yes, please update me!<br>
+	    			</fieldset>
+	    			<fieldset>
+	    				<div class="submitButton">
+	    					<input type="image" name="submit" value="submit" img src="images/submit.png">
+
+	    				</div>
+	    			</fieldset>
+	        </div>
+	      </form>
+			  
+		</div>
+
+		<div id="FindUs" class="tabcontent">
+			<br><br>
+			<p>Come Visit Us In Person!</p>
+			<img src="images/contact.png" >
+			<br><br>
+			<table border="4">
+		  <tr>
+		  	<th colspan="2">Come Visit Us!</th>
+		  </tr>
+		  <tr>
+		    <td>Address</td>
+		    <td>Lawrenceville, 5222 Butler St, Pittsburgh, PA 15201</td>
+		  </tr>
+		  <tr>
+		    <td>Phone Number</td>
+		    <td>412-781-0218</td>
+		  </tr>
+		  <tr>
+		    <td>Email Address</td>
+		    <td><a href = "mailto:info@thebutterwood.com">info@thebutterwood.com</a></td>
+		  </tr>
+		  <tr>
+		  	<td>Website</td>
+		  	<td><a href="index.html">Visit our Website</a></td>
+		  </tr>
+		</table>
+		<br><br>
+
+
+		<table border="4">
+		  <tr>
+		  	<th colspan="2">Hours of Operations</th>
+		  </tr>
+		  <tr>
+		    <th>Days of Week</th>
+		    <th>Times of Day</th> 
+		  </tr>
+		  <tr>
+		    <td>Monday</td>
+		    <td>Closed</td>
+		  </tr>
+		  <tr>
+		    <td>Tuesday</td>
+		    <td>Closed</td>
+		  </tr>
+		  <tr>
+		    <td>Wednesday-Friday</td>
+		    <td>12PM - 11 PM</td>
+		  </tr>
+		  <tr>
+		  	<td>Saturday</td>
+		  	<td>10AM - 11 PM</td>
+		  </tr>
+		  <tr>
+		  	<td>Sunday</td>
+		  	<td>10AM - 9 PM</td>
+		  </tr>
+		</table>
+			  
+		</div>
+
+		<script>
+			document.getElementById("defaultOpen").click();
+		</script>
+
+
+		<footer>
+            <p>The Butterwood Bake Consortium</p>
+            &copy;The Butterwood Bake Consortium<br/>
+            <div id = "otherLink">
+                <a href = "mailto:info@thebutterwood.com">Email Us</a>
+                <a href = "contact.html">Contact Us</a>
+            </div>
+            <div id = "pictureLink">
+                <a href="mailto:info@thebutterwood.com"  target="_blank"><img src="images/email.png"></a>
+                <a href="https://www.instagram.com/thebutterwoodbakeconsortium/?hl=en"  target="_blank"><img src ="images/instagram.png"></a>
+                <a href="https://www.facebook.com/thebutterwoodbakeconsortium/"  target="_blank"><img src="images/facebook.png"></a>
+            </div>
+        </footer>
+
+
+	</div>
+</body>
